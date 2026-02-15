@@ -702,7 +702,7 @@ button {
 }
  
 .wrap-team {
-  padding:32px 16px;
+  padding:32px 16px 0 16px;
 }
 
 .item-name-team {
@@ -723,24 +723,22 @@ button {
   text-align: center;
   color: #434455;
 }  
- 
-.team-list-foto {
-  display: block;
-  max-width: 100%;
-}
- 
-.container-icons-team {
-  width: 232px;
-  height: 40px;
-  margin: 8px auto 32px auto;
-
-}
 
 .icons-teams {
   display: flex;
   align-items: center;
   gap: 24px;
+
+  width: 232px;
+  height: 40px;
+  margin: 8px auto 32px auto;
 }
+ 
+.team-list-foto {
+  display: block;
+  max-width: 100%;
+}
+
 
 .item-icons {
   width: 40px;
@@ -824,7 +822,7 @@ button {
 
 .portfolio-list-item {
   width: 288px;
-  height: 400px;
+  
  
  background: #fff;
  box-shadow: 
@@ -881,7 +879,7 @@ button {
    padding: 32px 16px;
    width: 100%;
    height: 120px;
-    padding: 32px 16px;
+
   }
 
   .item-name-portfolio {
@@ -960,10 +958,13 @@ button {
 .container-footer {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  /* gap: 72px; */
   align-items: center;
-  padding: 96px 16px;
+  
 }
+ .container-footer-logo {
+  margin-bottom: 72px;
+ }
 
 .page-footer {
   padding: 96px 0;
@@ -975,6 +976,9 @@ button {
   align-items: center;
   margin-bottom: 16px;
 }
+.logo-part {
+  color: #f4f4fd;
+ }
  
 
 .footer-text {
@@ -985,6 +989,9 @@ button {
   color: #f4f4fd;
   width: 264px;
 } 
+ .container-footer-icons {
+  margin-bottom: 72px;
+ }
 
 .footer-media {
   font-weight: 500;
@@ -1022,10 +1029,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:16px;
   width: 100%;
   
 }
+ 
 
  .footer-email {
   width: 100%;
@@ -1081,6 +1088,7 @@ button {
 
 .footer-email-text {
   width: 100%;
+  
 }
 
 .footer-btn {
@@ -1125,15 +1133,9 @@ button {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 72px 24px;
+    /* gap: 72px 24px; */
   }
-
-  .container-footer-logo,
-  .container-footer-icons {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
-
-   
+  
 
   .container-footer-email {
     flex: 0 0 100%;
@@ -1150,10 +1152,6 @@ button {
   text-align: left;
 }
 
-  .footer-logo,
-  .footer-media {
-    text-align: left;
-  }
   .page-footer {
     padding: 96px 0;
   }
@@ -1188,16 +1186,14 @@ button {
     margin-right: auto;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 72px 24px;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .container-footer-logo,
-  .container-footer-icons {
-    flex: 0 0 calc(50% - 12px); 
-  }
-  .container-footer-email {
-    flex: 0 0 100%;
+  
+
+  .container-footer-logo {
+
+    margin-right: 24px;
   }
 
   .footer-logo,
@@ -1207,13 +1203,14 @@ button {
   .container-footer-email {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+  
   }
   .footer-email-form {
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+
   }
+  
 
 
   
@@ -1224,8 +1221,20 @@ button {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 120px;
     align-items: flex-start;
+  }
+
+  .container-footer-logo {
+    margin-right: 120px;
+  }
+
+  .container-footer-icons {
+    margin-right: 80px;
+  }
+
+  .container-footer-email {
+    width: 453px;
+   height: 80px;
   }
 
   .container-footer-logo,
@@ -1480,6 +1489,8 @@ button {
     justify-content: center;
     align-items: center;
     fill: none;
+
+    flex-shrink: 0;
   }
  
   .input-checkbox:checked + .terms-label .custom-checkbox {
@@ -1496,6 +1507,8 @@ button {
  .input-checkbox:checked + .terms-label .check-icon {
    opacity: 1;
  }
+
+  
  
   .accent {
    line-height: 1.33;
