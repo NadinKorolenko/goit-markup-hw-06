@@ -1028,7 +1028,7 @@ button {
 
  .footer-email {
   width: 100%;
-  max-width: 264px;
+  max-width: 288px;
  }
 
 .footer-email-form {
@@ -1048,7 +1048,8 @@ button {
 
  border: 1px solid #fff;
  border-radius: 4px;
- width: 264px;
+ width: 100%;
+ max-width: 288px;
  height: 40px;
  padding-left: 16px;
  background-color: transparent;
@@ -1075,6 +1076,10 @@ button {
 .container-footer-email {
   width: 100%;
   text-align: center;
+}
+
+.footer-email-text {
+  width: 264px;
 }
 
 .footer-btn {
