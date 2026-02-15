@@ -453,7 +453,7 @@ button {
 }
 
   
- .media screen and (min-resolution: 192dpi) {
+ @media screen and (min-resolution: 192dpi) {
 
   .main-solutions {
     background-image: linear-gradient(
@@ -575,6 +575,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .feature-text {
@@ -898,6 +899,14 @@ button {
   }
 }
 
+@media screen and (max-width: 1157px) {
+  .portfolio-list-item {
+    box-shadow: 0 2px 4px rgba(46, 47, 66, 0.08), 
+                0 1px 1px rgba(46, 47, 66, 0.16), 
+                0 1px 6px rgba(46, 47, 66, 0.08);
+  }
+}
+
 
 @media screen and (min-width: 1158px) {
   .list-portfolio {
@@ -908,7 +917,12 @@ button {
 
   .portfolio-list-item{
     width: 360px;
-  height: 420px;
+   height: 420px;
+   box-shadow: none;
+  }
+
+  .portfolio-list-item:hover {
+    box-shadow: 0 4px 12px rgba(46, 47, 66, 0.15);
   }
 
 }
@@ -1119,10 +1133,6 @@ button {
     gap: 16px;
   }
 
-  .footer-btn {
-    margin-left: 24px;
-  }
-
   .footer-email-form {
     display: flex;
     flex-direction: row;
@@ -1131,8 +1141,46 @@ button {
     gap: 24px;
   }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container-footer {
+    max-width: 584px;       
+    padding-left: 16px;     
+    padding-right: 16px;
+    margin-left: auto;      
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .container-footer-logo,
+  .container-footer-icons {
+    flex: 0 0 calc(50% - 12px); 
+  }
+  .container-footer-email {
+    flex: 0 0 100%;
+  }
+
+  .footer-logo,
+  .footer-media {
+    text-align: left;
+  }
+  .container-footer-email {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-email-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
 
 
+  
 }
 
 @media screen and (min-width: 1158px) {
